@@ -1,0 +1,144 @@
+/* General */
+
+body {
+    background: url("../images/2.jpg") no-repeat center;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+}
+
+.container {
+    padding: 10px 200px;
+    background-color: rgba(0, 0, 0, 0.468);
+    margin: -8px;
+}
+
+
+form {
+    background-color: #111111a2;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 285px;
+    padding-top: 13%;
+    margin: 120px auto;
+    border-radius: 4px;
+    padding: 3%;
+}
+
+img {
+    width: 80%;
+}
+
+.header {
+    color: goldenrod;
+    font-weight: 700;
+    font-size: 28px;
+    padding-bottom: 15px;
+}
+
+.optional {
+    display: inline-block;
+    background: F2F3F5;
+}
+
+#space {
+    padding: 1em;
+}
+
+.footer {
+    background-color: darkgoldenrod;
+    height: 45px;
+    border-radius: 0 0 4px 4px;
+    font-size: 12px;
+    margin-top: 88px;
+    padding-top: 3px;
+}
+
+.footer span {
+    color: goldenrod;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: black;
+}
+
+
+
+/* Fields and Button */
+
+.button {
+    width: 80%;
+    height: 42px;
+    margin: 13px 0px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    background-repeat: no-repeat;
+    background-position: 15px 17px;
+    text-indent: 17%;
+    font-family: inherit;
+    font-size: 16px;
+    color: darkorange;
+}
+
+#submit {
+    background-color: goldenrod;
+    font-size: 24px;
+    font-family: inherit;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 8px;
+    text-indent: 0;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+#submit:hover {
+    background-color: #FF7145;
+}
+
+
+
+/* Username & Password Icons */
+
+#username {
+    background-image: url('https://static.tumblr.com/mnsbkhd/24dms3lei/male.png');
+}
+
+#password {
+    background-image: url('https://static.tumblr.com/mnsbkhd/5IMms3ldm/locked.png');
+}
+
+
+
+/* Checkbox */
+
+input[type='checkbox'] {
+    visibility: hidden;
+}
+
+input[type='checkbox']+label span {
+    display: inline-block;
+    background: inherit;
+    border: 2px solid #FA4811;
+    border-radius: 35%;
+    margin: -1px 4px 0 0;
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+
+}
+
+input[type='checkbox']:checked+label span {
+    background: #FA4811;
+    border: 2px solid #FA4811;
+}
