@@ -87,13 +87,13 @@
                 </div>
             </div>
         </div>
-    </div> 
-    
+    </div>
+
             <div class="row posts">
-               
+
                 @foreach ($unites as $item)
                     <div class="featured container no-gutter">
-        
+
                     {{-- </div> --}}
                     <div id="zx" class="item sale col-md-4"
                         style="opacity: 1;">
@@ -130,7 +130,7 @@
                                        {{$item->price}} جنيه
                                     </p>
                                 </div>
-                                <a class="cola" href="{{url('P-Details')}}">
+                                <a class="cola" href="{{url('P-Details/'.$item->id)}}">
                                     <button class="glow-on-hover" type="button">
                                         Details
                                     </button>

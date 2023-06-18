@@ -30,19 +30,18 @@
                         placeholder="Enter your Unit Name">
                 </div>
                 <div class="inputfield"> <label for="">Unit Price</label>
-                    <input type="text" class="input" name="Price" placeholder="Enter your Unit Price" maxlength="7"
-                        pattern="^[0-9]{7}$" required placeholder="Enter your Unit Price" title="Enter numbers only">
+                    <input type="numeric " class="input" name="Price" placeholder="Enter your Unit Price"  required placeholder="Enter your Unit Price" title="Enter numbers only">
                 </div>
                 <div class="inputfield">
-                    <label for="units type">units type:</label>
-                    <select id="units" name="units">
+                    <label for="units type" >units type:</label>
+                    <select id="units" name="units" class="input">
                         <option value="">       </option>
                         <option value="residential">Residential</option>
                         <option value="commercial">Commercial</option>
                     </select>
                     </div>
             <div>
-                
+
                 <div class="inputfield">
                     <label for="">Upload Image</label>
                     <input type="file" class="input" name="file" id="">

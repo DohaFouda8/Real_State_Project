@@ -16,7 +16,8 @@ class Unites extends Model
         'price',
         'bank_id',
         'clients_id',
-        'image'
+        'image',
+        'type'
     ];
 
 

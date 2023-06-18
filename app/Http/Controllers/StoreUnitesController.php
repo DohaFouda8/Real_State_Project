@@ -22,7 +22,8 @@ class StoreUnitesController extends Controller
             'Name'=>'required',
             "Price"=>'required',
             "file" =>'required',
-            "address"=>'required'
+            "address"=>'required',
+            'units'=>'required'
         ]);
 
         $image = request()->file('file');
@@ -36,6 +37,7 @@ class StoreUnitesController extends Controller
             'price'=>$request->Price,
             'bank_id'=>1,
             'image'=>$filename,
+            'type'=>$request->units,
             'clients_id'=>Auth::user()->id
 
         ]);
@@ -48,7 +50,7 @@ class StoreUnitesController extends Controller
         return redirect()->back()->with('message','Deleted Successfully !');
 
     }
-    
+
 
 
 }

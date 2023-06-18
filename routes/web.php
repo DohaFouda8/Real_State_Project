@@ -23,22 +23,24 @@ use App\Models\Unites;
 Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('residential',function(){
-    $unites=Unites::get();
+    $unites=Unites::where('type','residential')->get();
 
     return view('residential',compact('unites'));
 });
 
 Route::get('commercial',function(){
-    $unites=Unites::get();
+    $unites=Unites::where('type','commercial')->get();
 
     return view('commercial',compact('unites'));
 });
 
-Route::get('P-Details',function(){
-    return view('P-Details');
+Route::get('P-Details/{id}',function($id){
+    $unite=Unites::findOrFail($id);
+
+    return view('P-Details',compact('unite'));
 });
 
 Route::get('contact_us',function(){

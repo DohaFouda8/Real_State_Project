@@ -20,10 +20,11 @@
                 <a href="{{url('residential')}}">
                     <button class="back-hover">&#128072;</button>
                 </a>
+                {{-- {{ $unite }} --}}
                 <div class="f-carousel" id="myCarousel">
                     <div class="f-carousel__slide" data-thumb-src="{{url('images/Details/evora compound.jpg')}}">
                         <a href="{{url('images/Details/evora compound.jpg')}}" data-fancybox="gallery"><img alt=""
-                                src="{{url('images/Details/evora compound.jpg')}}" /></a>
+                                src="{{url('storage/images/uploadedImages/'.$unite->image)}}" /></a>
                     </div>
                     <div class="f-carousel__slide" data-thumb-src="{{url('images/Details/evora compound.jpg')}}">
                         <a href="{{url('images/Details/evora compound.jpg')}}" data-fancybox="gallery"><img alt=""
@@ -77,10 +78,10 @@
             </div>
             <div class="right">
                 <p>
-                <h1>شقة سكنية 230م للبيع كاش بالتجمع الخامس الشويفات القاهرة</h1>
+                <h1>{{ $unite->name }}</h1>
                 </p>
                 <span class="s1">
-                    3,000,000 جنيه</span>
+                    {{ $unite->price }} جنيه</span>
                 <p class="inf">
                     <span class="saleb122">للبيع</span>
                     <span class="b122">لا يوجد تقسيط</span>
@@ -101,9 +102,7 @@
     <section class="section">
         <h2>التفاصيل</h2>
         <div class="col-sm-8">
-            <p class="details-compounds">#شقة_للبيع_التجمع_الخامس_بجوار_كايروفيستيفال_داون_تاون_الجامعة_الامريكية
-                شقة للبيع في التجمع الخامس235م في ارقياماكن التجمع بجوار كايروفيستيفال وداون تاون بالفرش والاجهزة
-                شقه دبل فيس بحرى بالكامل فيو جاردن بمنطقه الشويفات تواصل 01091219047 واتس اب</p>
+            <p class="details-compounds">{{ $unite->address  }}</p>
 
             <h3 class="haw">المرافق</h3>
             <div class="ddd">
